@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <title>Hello, world!</title>
+
+    <script>
+        $(document).ready(function () {
+            // $('#btnJson').click(function () {
+            //     var jsonObj = {
+            //         "FirstName": "mehul",
+            //         "LastName": "gohel",
+            //         "Address": []
+            //     };
+
+            //     for (var i = 0; i < 3; i++) {
+            //         var address = {}
+            //         address.street = i;
+            //         address.city = i;
+            //         jsonObj.Address.push(address);
+            //     }
+
+            //     $('#txtVal').text(JSON.stringify(jsonObj));
+            // });
+
+            $(document).ready(function () {
+                $('#btnJson').click(function () {
+                    var arr = [];
+
+                    arr.push({
+                        name: 'shubham',
+                        score: '0'
+                    })
+                    arr.push({
+                        name: 'shivam',
+                        score: '10'
+                    })
+
+                    $('#txtVal').text(JSON.stringify(arr));
+                    console.log(arr[1].name);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="btnJson">click</button>
+    <div id="txtVal"></div>
+
+
+</body>
+
+</html>
